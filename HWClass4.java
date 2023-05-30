@@ -1,3 +1,4 @@
+import Utils.CommonMethods;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -7,7 +8,7 @@ import javax.lang.model.element.Element;
 import static Utils.CommonMethods.driver;
 import static Utils.CommonMethods.openBrowserAndLaunchApplication;
 
-public class HWClass4 {
+public class HWClass4 extends CommonMethods {
 
     //goto facebook.com
     // click on create account
@@ -22,7 +23,7 @@ public class HWClass4 {
 
         driver.manage().window().maximize();
 
-        
+
 
         WebElement DD = driver.findElement(By.xpath("//select[@name='birthday_month']"));
 //        2.create an object of the select class and pass in the parameters the element dropdown
